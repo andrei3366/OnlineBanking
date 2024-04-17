@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înregistrare - Online Banking</title>
+    <link rel="stylesheet" href="background.css">
+    
+</head>
+<body class="background">
+    <div class="login-container">
+        <h1>Creare Cont Nou</h1>
+        <form id="registerForm">
+            <label for="newUsername">Nume utilizator:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+            <label for="newPassword">Parolă:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+            <label for="confirmPassword">Confirmă Parola:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="address">Adresă:</label>
+            <input type="text" id="address" name="address" required>
+            <label for = "cnp">CNP:</label>
+            <input type="text" id="cnp" name="cnp" required>
+            
+            <!-- Poți adăuga și alte câmpuri după necesități -->
+            <input type="submit" value="Înregistrează-te">
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
