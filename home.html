@@ -3,75 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Banking - Acasă</title>
+    <title>Online Banking - Home</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="background.css">
 </head>
-<body>
+<body class="background">
     <header>
-      
-        <nav>
-            <ul>
-             <img src="images/logo_transparency_fixed.png" alt="Online Banking Logo" class="small-left-image">
-                <li><a href="#">Acasă</a></li>
-                <li><a href="#">Despre noi</a></li>
-                <li><a href="#">Servicii</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <a href="menu.html" class="menu-btn">
+                &#9776;
+            </a>            
+            <div class="nav-btn">
+                <ul>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="cards.html">Cards</a></li>
+                    <li><a href="#">Payments & Transfers</a></li>
+                    <li><a href="#">Log Out </a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <section id="banner">
-        <h1>Deschideți un cont online cu ușurință</h1>
-        <p>Începeți călătoria financiară cu noi și bucurați-vă de banking simplu și rapid.</p>
-        <a href="#" class="button">Deschide Cont</a>
-    </section>
-    <div class="benefits">
-      <div class="benefit-item">
-          <img src="images/atm image.jpg" alt="ATM">
-          <h3>Ai retrageri gratuite de la ATM-ul oricărei bănci din România</h3>
-          <p>Beneficiezi de ZERO comision la retrageri în lei, de la mi de ATM-uri din țară, ori de câte ori ai nevoie, fără să fii nevoit să cauți un bancomat Raiffeisen.</p>
-      </div>
-      <div class="benefit-item">
-          <img src="images/discount image.jpg" alt="Discount">
-          <h3>Oferte și reduceri pe stilul tău, prin Smart Market</h3>
-          <p>Vrei să faci mai multe cu banii tăi? Descarcă aplicația de localizare Smart Market și ai o mulțime de recompense disponibile, sub formă de vouchere, discount-uri, puncte de loialitate sau cashback, de la o varietate de parteneri.</p>
-      </div>
-  </div>
-  <main>
-    <div class="form-container">
-      <h1>Nu ești încă client? Lasă-ne datele și te sunăm noi</h1>
-      <form action="submit-form.php" method="post">
-          <!-- Asigură-te că 'submit-form.php' este scriptul tău de backend care prelucrează formularul -->
-          <label for="country">Cetățenie*</label>
-          <select name="country" id="country" required>
-              <option value="Romania">România</option>
-              <option value="Romania">SUA</option>
-              <option value="Romania">UK</option>
-              <option value="Romania">Spania</option>
-              <option value="Romania">Germania</option>
-              <option value="Romania">Franta</option>
 
-              <!-- Adaugă alte opțiuni de țări aici -->
-          </select>
-  
-          <label for="cnp">CNP*</label>
-          <input type="text" id="cnp" name="cnp" required>
-  
-          <label for="nume">Nume*</label>
-          <input type="text" id="nume" name="nume" required>
-  
-          <label for="prenume">Prenume*</label>
-          <input type="text" id="prenume" name="prenume" required>
-  
-          <!-- Adaugă și alte câmpuri necesare, cum ar fi adresa, numărul de telefon, etc. -->
-  
-          <input type="submit" value="Trimite">
-      </form>
-  </div>
-  
-</main>
-    <footer>
-        <p>Contact: email@banca.ro | Telefon: +40 123 456 789</p>
-        <script src="home.js"></script>
-    </footer>
+    <div class="container glass">
+        <div class="content">
+            <h1>Main</h1>
+            <h2>Account Type</h2>
+            <h3>Total Balance</h3>
+            <button class="account-btn">Accounts</button>
+            <div class="buttons">
+                <button class="add-money-btn">Add Money</button>
+                <button class="exchange-btn">Exchange</button>
+                <button class="details-btn">Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="transaction-history glass">
+        <h2>Transaction History</h2>
+        <div class="transactions">
+            <div class="transaction">Transaction 1</div>
+            <div class="transaction">Transaction 2</div>
+            <div class="transaction">Transaction 3</div>
+        </div>
+        <button class="expand-button">&#43; More</button>
+    </div>
+    <div class="upcoming-events glass">
+        <h2>Upcoming Events</h2>
+        <button class="schedule-button">&#43; Schedule Payment</button>
+    </div>
+    
 </body>
 </html>

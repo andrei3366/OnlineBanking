@@ -1,161 +1,103 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+
+.container{
+    width: 700px;
+    height: 400px;
+    margin: 100px auto;
 }
 
-header {
-    background-color: #0046ae;
-    color: white;
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.content {
     padding: 20px;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-
-.small-left-image {  
-    width: 7%;  
-    float: left;
-    margin-top: -20px;
-    
- }
-
-
-#banner {
-    background-color: #007bff;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.button {
-    display: inline-block;
-    background-color: #ffcc00;
-    color: #0046ae;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    bottom: 0;
-    width: 100%;
-}
-
-.benefits {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f3e179; 
-}
-
-.benefit-item {
-    flex-basis: 22%; 
-    margin: 10px;
-    padding: 20px;
-    background: #ffffff; 
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.benefit-item img {
-    max-width: 100px;
-    margin-bottom: 20px;
-}
-
-.benefit-item h3 {
-    color: #333333; 
-    margin-bottom: 10px;
-}
-
-.benefit-item p {
-    font-size: 14px; 
-    color: #666666; 
-}
-
-.form-container {
-    width: 50%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    
-}
-
-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-form label, form select, form input {
-    margin-bottom: 10px;
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
 }
 
-form input[type="submit"] {
-    background-color: #0046ae;
-    color: white;
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: #aae0d6;
+    border: none;
+    transition: box-shadow 0.3s, transform 0.3s; /* Add transition for smooth effect */
+
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow on hover */
+    transform: scale(1.1); /* Increase size by 10% on hover */
+}
+
+.transaction-history {
+    width: 700px;
+    height: auto; /* Set height to auto to allow content to expand */
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.transaction-history h2 {
+    margin-bottom: 20px;
+}
+
+.transactions {
+    margin-bottom: 20px;
+}
+
+.transaction {
     padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Add border bottom to separate transactions */
+}
+
+.expand-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #aae0d6;
     border: none;
     cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
 }
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+
+.expand-button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
 }
-.form-container {
-    max-width: 400px;
-    margin: 50px auto;
-    background-color: #fff;
+
+.upcoming-events {
+    width: 700px;
+    height: auto; 
+    margin: 20px auto; 
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; 
 }
-h1 {
-    font-size: 24px;
+
+.upcoming-events h2 {
     margin-bottom: 20px;
-    text-align: center;
 }
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-select, input[type="text"], input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
+
+.schedule-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #aae0d6;
+    border: none;
     cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
 }
-input[type="submit"]:hover {
-    background-color: #0056b3;
+
+.schedule-button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
 }
